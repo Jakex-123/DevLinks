@@ -6,11 +6,13 @@ import PreviewButton from "./PreviewButton";
 import ProfileIcon from "/public/images/icon-profile-details-header.svg";
 import LinkIcon from "/public/images/icon-link.svg";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = ({isAuth}:{isAuth:boolean}) => {
   // State to track the active button
-  const [activeTab, setActiveTab] = useState("links");
-
+  const path=usePathname()
+  const [activeTab, setActiveTab] = useState(path.slice(1));
+  
   return (
     <div className="h-[74px] md:h-[78px] w-full flex justify-between items-center p-4 pl-6 rounded-xl bg-white">
       <div className="w-[52px] md:w-auto flex items-center gap-[6px]">
