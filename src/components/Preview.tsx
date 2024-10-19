@@ -30,7 +30,7 @@ const PreviewLink = ({ link }: { link: any }) => {
 
 const Preview = ({ links }: { links: any[] }) => {
     return (
-        <div className='w-full lg:w-[40%] p-[100px] flex justify-center bg-white rounded-xl'>
+        <div className='w-full h-full lg:w-[40%] p-[100px] flex justify-center bg-white rounded-xl'>
             <div className="relative">
                 <Mockup />
                 <div className='absolute top-[278px] left-9 flex flex-col gap-5'>
