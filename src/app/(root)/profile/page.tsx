@@ -35,7 +35,6 @@ const Profile = () => {
       }
     };
     fetchUserData();
-    console.log(user)
   }, []);
 
   return (

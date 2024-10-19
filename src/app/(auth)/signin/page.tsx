@@ -6,7 +6,6 @@ import { useFormState } from 'react-dom';
 
 const SignUp = () => {
   const [state, action, pending] = useFormState(loginUser, null);
-
   return (
     <form action={action} className="space-y-4 bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
       <h1 className='font-bold text-center text-accent text-xl'>Login</h1>
@@ -31,7 +30,6 @@ const SignUp = () => {
         />
         {state?.errors?.password && <p className="mt-1 text-sm text-red-600">{state.errors.password[0]}</p>}
       </div>
-
       <div>
         <button disabled={pending}
           type="submit" 
