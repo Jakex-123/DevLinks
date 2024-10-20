@@ -3,22 +3,23 @@ import { z } from "zod";
 
 // Define platform-specific URL patterns
 const platformUrlPatterns = {
-  github: /^https?:\/\/(www\.)?github\.com\/[A-Za-z0-9_-]+$/,
-  gitlab: /^https?:\/\/(www\.)?gitlab\.com\/[A-Za-z0-9_-]+$/,
-  codepen: /^https?:\/\/(www\.)?codepen\.io\/[A-Za-z0-9_-]+$/,
-  codewars: /^https?:\/\/(www\.)?codewars\.com\/users\/[A-Za-z0-9_-]+$/,
-  facebook: /^https?:\/\/(www\.)?facebook\.com\/[A-Za-z0-9_.-]+$/,
-  twitter: /^https?:\/\/(www\.)?twitter\.com\/[A-Za-z0-9_-]+$/,
-  devto: /^https?:\/\/(www\.)?dev\.to\/[A-Za-z0-9_-]+$/,
-  email: /^mailto:.+@.+\..+$/,
-  freecodecamp: /^https?:\/\/(www\.)?freecodecamp\.org\/[A-Za-z0-9_-]+$/,
-  "frontend-mentor": /^https?:\/\/(www\.)?frontendmentor\.io\/[A-Za-z0-9_-]+$/,
-  hashnode: /^https?:\/\/(www\.)?hashnode\.com\/@?[A-Za-z0-9_-]+$/,
-  linkedin: /^https?:\/\/(www\.)?linkedin\.com\/in\/[A-Za-z0-9_-]+$/,
-"stack-overflow": /^https?:\/\/(www\.)?stackoverflow\.com\/[A-Za-z0-9_-]+\/[0-9]+\/[A-Za-z0-9_-]+\/?$/,
-  twitch: /^https?:\/\/(www\.)?twitch\.tv\/[A-Za-z0-9_-]+$/,
-  youtube: /^https?:\/\/(www\.)?(youtube\.com\/[A-Za-z0-9_-]+|youtu\.be\/[A-Za-z0-9_-]+)$/,
+  github: /^https:\/\/(www\.)?github\.com\/?.*$/,
+  gitlab: /^https:\/\/(www\.)?gitlab\.com\/?.*$/,
+  codepen: /^https:\/\/(www\.)?codepen\.io\/?.*$/,
+  codewars: /^https:\/\/(www\.)?codewars\.com\/?.*$/,
+  facebook: /^https:\/\/(www\.)?facebook\.com\/?.*$/,
+  twitter: /^https:\/\/(www\.)?twitter\.com\/?.*$/,
+  devto: /^https:\/\/(www\.)?dev\.to\/?.*$/,
+  email: /^mailto:.+@.+\..+$/, // email validation remains the same
+  freecodecamp: /^https:\/\/(www\.)?freecodecamp\.org\/?.*$/,
+  "frontend-mentor": /^https:\/\/(www\.)?frontendmentor\.io\/?.*$/,
+  hashnode: /^https:\/\/(www\.)?hashnode\.com\/?.*$/,
+  linkedin: /^https:\/\/(www\.)?linkedin\.com\/?.*$/,
+  "stack-overflow": /^https:\/\/(www\.)?stackoverflow\.com\/?.*$/,
+  twitch: /^https:\/\/(www\.)?twitch\.tv\/?.*$/,
+  youtube: /^https:\/\/(www\.)?(youtube\.com|youtu\.be)\/?.*$/,
 };
+
 
 // Function to validate URL against platform-specific pattern
 const validateUrlByPlatform = (platform: string, url: string) => {
