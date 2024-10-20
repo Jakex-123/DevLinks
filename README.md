@@ -43,6 +43,3 @@ DevLinks is a web application designed to help developers manage and share their
 
 5. **Explore your links:** Navigate to your profile page to view and manage your added links.
 
-## License
-
-This project is licensed under the MIT License. 
