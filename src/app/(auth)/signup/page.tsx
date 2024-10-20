@@ -41,6 +41,7 @@ const SignUp = () => {
           type="password" // Use type="password" for better security
           name="password" 
           id="password" 
+          autoComplete='off'
           className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
         />
         {state?.errors?.password && <p className="mt-1 text-sm text-red-600">{state.errors.password[0]}</p>}
