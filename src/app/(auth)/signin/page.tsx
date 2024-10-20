@@ -6,6 +6,7 @@ import { useFormState } from 'react-dom';
 
 const SignUp = () => {
   const [state, action, pending] = useFormState(loginUser, null);
+  
   return (
     <form action={action} className="space-y-4 bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
       <h1 className='font-bold text-center text-accent text-xl'>Login</h1>

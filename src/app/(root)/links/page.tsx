@@ -39,11 +39,13 @@ const Links = () => {
     const updateLink = (id: string, newData: Partial<LinkType>) => {
         setLinks(links.map((link) => (link.id === id ? { ...link, ...newData } : link)));
     };
+    const [isSubmitting,setIsSubmitting]=useState(false)
 
     
 
     const getLinkPosition = (id: string) => links.findIndex((link) => link.id === id);
     const handleSubmit = async () => {
+        setIsSubmitting(true)
       const validationErrors: { id: string; errors: z.ZodIssue[] }[] = [];
 
       // Validate each link using the Zod schema
@@ -68,6 +70,7 @@ const Links = () => {
       } else {
           await saveLinks(links)
       }
+      setIsSubmitting(false)
   };
 
     const handleDragEnd = (e:DragEndEvent) => {
@@ -136,10 +139,10 @@ const Links = () => {
                 <hr />
                 <div className="p-4 md:p-6 md:px-10 flex md:justify-end bg-white rounded-b-xl">
                     <button onClick={handleSubmit}
-                        disabled={links.length === 0}
+                        disabled={links.length === 0 || isSubmitting}
                         className="disabled:bg-[rgb(99,60,255,0.4)] disabled:outline-none shadow-md bg-accent text-white w-full md:w-[91px] flex flex-col items-center px-[27px] py-[11px] h-[46px] outline outline-1 outline-black rounded-lg"
                     >
-                        <p className="text-[16px] font-semibold">Save</p>
+                        <p className="text-[16px] font-semibold">{isSubmitting?'Saving':'Save'}</p>
                     </button>
                 </div>
             </div>
