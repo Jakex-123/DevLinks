@@ -21,6 +21,11 @@ DevLinks is a web application designed to help developers manage and share their
 * **Profile Page:** Display your links in a user-friendly interface with options for sharing.
 * **Preview Feature:** View a preview of the linked resource directly within the application.
 
+## Future Features
+* **Links Editing:** Enhance link management by allowing users to edit existing links.
+* **Sharing Options:** Enable users to share their links with others by viewing their profile.
+* **Improved Profile Page Design:** Revamp the profile page for a more visually appealing user experience.
+
 ## Installation
 
 1. **Install bun:** Download and install the latest version of Bun from the official website ([https://bun.sh/](https://bun.sh/)).
