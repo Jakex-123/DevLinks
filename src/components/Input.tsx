@@ -9,11 +9,11 @@ interface InputProps {
 
 const Input: React.FC<InputProps> = ({ setOnChange, classes = '', errormessage }) => {
   return (
-    <div className="relative bg-white">
+    <div className="relative">
       <label htmlFor="link" className="block text-[12px] text-gray-700 mb-1">
         Link
       </label>
-      <div className={`flex items-center px-4 py-3 outline outline-1 outline-outline rounded-lg ${classes}`}>
+      <div className={`bg-white flex items-center px-4 py-3 outline outline-1 outline-outline rounded-lg ${classes}`}>
         <div>
           <UrlIcon />
         </div>
