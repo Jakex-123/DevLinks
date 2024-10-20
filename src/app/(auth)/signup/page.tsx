@@ -38,7 +38,7 @@ const SignUp = () => {
       <div>
         <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
         <input 
-          type="password" // Use type="password" for better security
+          type="password"
           name="password" 
           id="password" 
           autoComplete='off'
