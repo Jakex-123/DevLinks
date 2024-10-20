@@ -10,11 +10,10 @@ DevLinks is a web application designed to help developers manage and share their
 * **Link Management:** Create, edit, and delete links, categorizing them by platform or purpose.
 * **Profile Page:** Display your links in a user-friendly interface with options for sharing.
 * **Preview Feature:** View a preview of the linked resource directly within the application.
-* **Link Sharing:** Easily share your links with others.
 
 ## Installation
 
-1. **Install Node.js and npm:** Download and install the latest version of Node.js from the official website ([https://nodejs.org/](https://nodejs.org/)). npm (Node Package Manager) is included with Node.js.
+1. **Install bun:** Download and install the latest version of Bun from the official website ([https://bun.sh/](https://bun.sh/)).
 2. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/devlinks.git
@@ -25,14 +24,14 @@ DevLinks is a web application designed to help developers manage and share their
    ```
 4. **Install dependencies:**
    ```bash
-   npm install
+   bun install
    ```
 
 ## Usage
 
 1. **Start the development server:**
    ```bash
-   npm run dev
+   bun run dev
    ```
    This will start the application on `http://localhost:3000`.
 
@@ -44,20 +43,3 @@ DevLinks is a web application designed to help developers manage and share their
 
 5. **Explore your links:** Navigate to your profile page to view and manage your added links.
 
-6. **Share your links:** Share your profile link with others so they can view your curated collection.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-1. **Fork the repository:** Create a fork of the project on your GitHub account.
-
-2. **Create a branch:** Create a new branch for your changes.
-
-3. **Make your changes:** Implement your changes and ensure they follow existing coding standards.
-
-4. **Submit a pull request:** Submit a pull request to the original repository, providing a clear description of your changes.
-
-## License
-
-This project is licensed under the MIT License. 
