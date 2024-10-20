@@ -13,7 +13,7 @@ DevLinks is a web application designed to help developers manage and share their
 
 ## Installation
 
-1. **Install Node.js and npm:** Download and install the latest version of Node.js from the official website ([https://nodejs.org/](https://nodejs.org/)). npm (Node Package Manager) is included with Node.js.
+1. **Install bun:** Download and install the latest version of Bun from the official website ([https://bun.sh/](https://bun.sh/)).
 2. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/devlinks.git
@@ -24,14 +24,14 @@ DevLinks is a web application designed to help developers manage and share their
    ```
 4. **Install dependencies:**
    ```bash
-   npm install
+   bun install
    ```
 
 ## Usage
 
 1. **Start the development server:**
    ```bash
-   npm run dev
+   bun run dev
    ```
    This will start the application on `http://localhost:3000`.
 
