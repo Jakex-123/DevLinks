@@ -10,7 +10,6 @@ DevLinks is a web application designed to help developers manage and share their
 * **Link Management:** Create, edit, and delete links, categorizing them by platform or purpose.
 * **Profile Page:** Display your links in a user-friendly interface with options for sharing.
 * **Preview Feature:** View a preview of the linked resource directly within the application.
-* **Link Sharing:** Easily share your links with others.
 
 ## Installation
 
@@ -43,20 +42,6 @@ DevLinks is a web application designed to help developers manage and share their
 4. **Start adding links:** Click the "Add Link" button to add a new link to your profile.
 
 5. **Explore your links:** Navigate to your profile page to view and manage your added links.
-
-6. **Share your links:** Share your profile link with others so they can view your curated collection.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-1. **Fork the repository:** Create a fork of the project on your GitHub account.
-
-2. **Create a branch:** Create a new branch for your changes.
-
-3. **Make your changes:** Implement your changes and ensure they follow existing coding standards.
-
-4. **Submit a pull request:** Submit a pull request to the original repository, providing a clear description of your changes.
 
 ## License
 
