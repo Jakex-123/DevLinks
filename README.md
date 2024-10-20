@@ -4,6 +4,16 @@
 
 DevLinks is a web application designed to help developers manage and share their links to various online resources. It provides a centralized platform for organizing your favorite code repositories, coding challenges, articles, and more.
 
+## Technologies Used
+
+* **Frontend and Backend:** Next.js
+* **Database:** MongoDB
+* **ORM:** mongoose
+* **Authentication:** jsonwebtoken(jose), bcryptjs and cookies
+* **Styling:** Tailwind CSS
+* **Form Validation:** Zod
+* **Drag-and-Drop:** dnd-kit
+
 ## Features
 
 * **User Authentication:** Securely sign up and log in to manage your links.
